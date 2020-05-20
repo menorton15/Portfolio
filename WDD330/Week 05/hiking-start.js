@@ -104,7 +104,7 @@ window.addEventListener("load", () => {
 function showHikeList() {
   const hikeListElement = document.getElementById("hikes");
   hikeListElement.innerHTML = "";
-  renderHikeList(hikeList, hikeListElement);
+  renderHikeList(hikeListElement, hikeList);
 }
 
 function renderOneHike(hike) {
