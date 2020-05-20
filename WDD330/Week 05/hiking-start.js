@@ -55,6 +55,8 @@ export default class Hikes {
     renderHikeList(this.parentElement, hikeList);
     this.addHikeListener();
     
+    this.backButton.classList.add('hidden');
+    
   }
   // show one hike with full details in the parentElement
   showOneHike(hikeName) {
