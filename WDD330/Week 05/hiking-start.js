@@ -52,7 +52,7 @@ export default class Hikes {
   }
   //show a list of hikes in the parentElement
   showHikeList() {
-    renderHikeList(parent, hikeList);
+    renderHikeList(this.parentElement, hikeList);
     
   }
   // show one hike with full details in the parentElement
