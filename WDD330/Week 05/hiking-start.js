@@ -105,19 +105,29 @@ function renderOneHikeLight(hike) {
   return item;
 }
 function renderOneHikeFull(hike) {
-  const item = document.createElement("li");
-  item.innerHTML = ` <h2>${hike.name}</h2>
-  <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
-  <div>
-          <div>
-              <h3>Distance</h3>
-              <p>${hike.distance}</p>
-          </div>
-          <div>
-              <h3>Difficulty</h3>
-              <p>${hike.difficulty}</p>
-          </div>
-  </div>`;
+  const item = document.createElement('li');
+  item.innerHTML = ` 
+    
+        <img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}">
+        <h2>${hike.name}</h2>
+        <div>
+            <h3>Distance</h3>
+            <p>${hike.distance}</p>
+        </div>
+        <div>
+            <h3>Difficulty</h3>
+            <p>${hike.difficulty}</p>
+        </div>
+        <div>
+            <h3>Description</h3>
+            <p>${hike.description}</p>
+        </div>
+        <div>
+            <h3>How to get there</h3>
+            <p>${hike.directions}</p>
+        </div>
+    
+    `;
   return item;
 }
 
