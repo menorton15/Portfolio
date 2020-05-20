@@ -112,6 +112,7 @@ function renderOneHikeFull(hike) {
               <h3>Difficulty</h3>
               <p>${hike.difficulty}</p>
           </div>
+          <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
   </div>`;
   return item;
 }
