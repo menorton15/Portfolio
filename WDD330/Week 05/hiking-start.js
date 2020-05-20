@@ -51,7 +51,10 @@ export default class Hikes {
     return this.getAllHikes().find(hike => hike.name === hikeName);
   }
   //show a list of hikes in the parentElement
-  showHikeList() {}
+  showHikeList() {
+    renderHikeList(parent, hikes);
+    
+  }
   // show one hike with full details in the parentElement
   showOneHike(hikeName) {}
   // in order to show the details of a hike ontouchend we will need to attach a listener AFTER the list of hikes has been built. The function below does that.
@@ -65,7 +68,11 @@ export default class Hikes {
   }
 }
 // methods responsible for building HTML.  Why aren't these in the class?  They don't really need to be, and by moving them outside of the exported class, they cannot be called outside the module...they become private.
-function renderHikeList(parent, hikes) {}
+function renderHikeList(parent, hikes) {
+  hikes.forEach(hike => {
+    parent.appendChild(renderOneHikeLite(hike));
+  });
+}
 function renderOneHikeLight(hike) {
   const item = document.createElement("li");
   item.innerHTML = ` <h2>${hike.name}</h2>
