@@ -100,11 +100,6 @@ function showHikeList() {
   renderHikeList(hikeList, hikeListElement);
 }
 
-function renderHikeList(hikes, parent) {
-  hikes.forEach(hike => {
-    parent.appendChild(renderOneHike(hike));
-  });
-}
 function renderOneHike(hike) {
   const item = document.createElement("li");
 
