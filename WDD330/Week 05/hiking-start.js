@@ -140,14 +140,6 @@ function renderOneHikeFull(hike) {
 }
 
 
-
-
-function showHikeList() {
-  const hikeListElement = document.getElementById("hikes");
-  hikeListElement.innerHTML = "";
-  renderHikeList(hikeListElement, hikeList);
-}
-
 function renderOneHike(hike) {
   const item = document.createElement("li");
 
