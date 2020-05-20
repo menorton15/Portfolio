@@ -76,8 +76,13 @@ export default class Hikes {
     });
   }
   buildBackButton() {
-    const backButton = document.createElement("button");
-
+    const backButton = document.createElement('button');
+    backButton.innerHTML = '&lt;- All Hikes';
+    backButton.addEventListener('touchend', () => {
+      this.showHikeList();
+    });
+    backButton.classList.add('hidden');
+    this.parentElement.before(backButton);
     return backButton;
   }
 }
