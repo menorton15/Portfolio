@@ -56,7 +56,9 @@ export default class Hikes {
     
   }
   // show one hike with full details in the parentElement
-  showOneHike(hikeName) {}
+  showOneHike(hikeName) {
+    renderOneHikeFull(hikeName);
+  }
   // in order to show the details of a hike ontouchend we will need to attach a listener AFTER the list of hikes has been built. The function below does that.
   addHikeListener() {
     // We need to loop through the children of our list and attach a listener to each, remember though that children is a nodeList...not an array. So in order to use something like a forEach we need to convert it to an array.
@@ -96,10 +98,7 @@ function renderOneHikeFull(hike) {
 }
 
 
-//on load grab the array and insert it into the page
-window.addEventListener("load", () => {
-  showHikeList();
-});
+
 
 function showHikeList() {
   const hikeListElement = document.getElementById("hikes");
