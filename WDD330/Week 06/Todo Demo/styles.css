@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-content {
+  display: flexbox;
+  text-align: center;
+  width: 66.66%;
+  height: auto;
+  word-wrap: break-word;
+}
+
+.todo-delete-btn {
+  background-color: red;
+  color: white;
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 17%;
+}
+
+.complete-btn {
+  background-color: white;
+  border: inset;
+  width: 25px;
+  height: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10%;
+  line-height: 25px;
+  white-space: nowrap;
+  float: left;
+  
+}
+
+.todo {
+  display: flex;
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-style: solid;
+}
+
+.todo::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.filter {
+  border-style: none;
+  background-color: cornflowerblue;
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 33.33%;
+  height: 100%;
+  padding: 15px;
+}
+
+.todo-filters{
+  width: 25%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  border: solid;
+  font-size: 0px;
+}
+
+.add-todo-wrapper{
+  margin-top: 15px;
+  text-align: center;
+}
