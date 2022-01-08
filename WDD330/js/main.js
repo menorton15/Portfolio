@@ -5,10 +5,12 @@ const links = [
     }
 ];
 
-document.getElementById("table-of-contents").innerHTML="<li>alkhfjlksahfdjlakdfjhaldjhlfahj</li>";   
+element = document.createElement("li");
+element.innerHTML="<li>alkhfjlksahfdjlakdfjhaldjhlfahj</li>";   
+document.getElementById("table-of-contents").appendChild(element); 
 
 links.forEach( function addPageLink(item){
-    var element = document.createElement("li")
-    element.innerHTML = `<li><a href=${item.url}>${item.lable}</a></li>`
+    var element = document.createElement("li");
+    element.innerHTML = `<li><a href=${item.url}>${item.lable}</a></li>`;
     document.getElementById("table-of-contents").appendChild(element);   
 });
