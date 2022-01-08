@@ -5,7 +5,7 @@ const links = [
     }
 ];
 
-document.getElementById("table-of-contents").innerHTML.concat("<li>alkhfjlksahfdjlakdfjhaldjhlfahj</li>");   
+document.getElementById("table-of-contents").innerHTML="<li>alkhfjlksahfdjlakdfjhaldjhlfahj</li>";   
 
 links.forEach( function addPageLink(item){
     document.getElementById("table-of-contents").innerHTML.concat(`<li><a href=${item.url}>${item.lable}</a></li>`);   
