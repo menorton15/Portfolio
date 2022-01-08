@@ -5,10 +5,7 @@ const links = [
     }
 ]
 
-links.forEach(addPageLink)
-    
-function addPageLink(item)
-{
+links.forEach( function addPageLink(item){
     document.getElementById("table-of-contents").innerHTML.concat(
         `<li><a href=${item.url}>${item.lable}</a></li>`)   
-}
+})
