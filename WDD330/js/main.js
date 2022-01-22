@@ -4,6 +4,10 @@ const links = [
         url: "Week01/index.html"
     },
     {
+        lable: "Week 2",
+        url: "Week02/index.html"
+    },
+    {
         lable: "Week 3",
         url: "Week03/index.html"
     }
